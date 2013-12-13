@@ -3,7 +3,7 @@
 	<groupId>com.agb.gitflow</groupId>
 	<artifactId>root-pom</artifactId>
 
-	<version>0.0.6</version>
+	<version>0.0.7-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
