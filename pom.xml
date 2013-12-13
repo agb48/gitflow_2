@@ -6,10 +6,15 @@
   
   <distributionManagement>
 		<repository>
-			<id>github</id>
-			<url>https://github.com/agb48/gitflow_2.git</url>
+			<id>3Ci-nexus</id>
+			<url>http://localhost:8080/nexus/content/repositories/releases/</url>
 			<uniqueVersion>false</uniqueVersion>
 		</repository>
+		<snapshotRepository>
+			<id>3Ci-nexus-snapshots</id>
+			<url>http://localhost:8080/nexus/content/repositories/snapshots/</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
 	</distributionManagement>
   
   <build>
