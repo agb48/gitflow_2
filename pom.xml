@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.agb.gitflow</groupId>
 	<artifactId>root-pom</artifactId>
@@ -61,7 +62,7 @@
 			<plugin>
 				<groupId>com.atlassian.maven.plugins</groupId>
 				<artifactId>maven-jgitflow-plugin</artifactId>
-				<version>1.0-alpha21.1</version>
+				<version>1.0-alpha26</version>
 				<configuration>
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>
@@ -71,6 +72,13 @@
 						<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
 						<versionTagPrefix>SSMS-</versionTagPrefix>
 					</flowInitContext>
+					<allowSnapshots>false</allowSnapshots>
+					<allowUntracked>false</allowUntracked>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<pushReleases>true</pushReleases>
+<!-- 					   <enableFeatureVersions>true</enableFeatureVersions> -->
+<!--         <enableSshAgent>true</enableSshAgent> -->
+<!--         <localOnly>true</localOnly> -->
 				</configuration>
 			</plugin>
 		</plugins>
