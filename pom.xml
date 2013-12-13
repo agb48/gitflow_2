@@ -2,7 +2,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.agb.gitflow</groupId>
 	<artifactId>root-pom</artifactId>
-	<version>0.0.7</version>
+
+	<version>0.0.9</version>
+
 	<packaging>pom</packaging>
 
 
@@ -60,7 +62,7 @@
 			<plugin>
 				<groupId>com.atlassian.maven.plugins</groupId>
 				<artifactId>maven-jgitflow-plugin</artifactId>
-				<version>1.0-alpha21.1</version>
+				<version>1.0-alpha26</version>
 				<configuration>
 					<flowInitContext>
 						<masterBranchName>master</masterBranchName>
@@ -70,6 +72,15 @@
 						<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
 						<versionTagPrefix>SSMS-</versionTagPrefix>
 					</flowInitContext>
+					<allowSnapshots>false</allowSnapshots>
+					<allowUntracked>false</allowUntracked>
+					<pushFeatures>true</pushFeatures>
+					<allowUntracked>false</allowUntracked>
+					<autoVersionSubmodules>false</autoVersionSubmodules>
+					<pushReleases>true</pushReleases>
+					<releaseBranchVersionSuffix>${project.name}-</releaseBranchVersionSuffix>
+					<scmCommentPrefix>${project.name}</scmCommentPrefix>
+					<noDeploy>false</noDeploy>
 				</configuration>
 			</plugin>
 		</plugins>

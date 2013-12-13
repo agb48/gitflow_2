@@ -14,5 +14,7 @@ public class Test {
 		System.out.println("feature-2");
 		System.out.println("solo j gitasdasaddasd flow");
 		System.out.println("feature-2");
+		System.out.println("f1");
+		System.out.println("new features ");
 	}
 }
