@@ -12,6 +12,6 @@ public class Test {
 		System.out.println("cambio asdasdsden rasdasdelease 1");
 		System.out.println("feature-1");
 		System.out.println("feature-2");
-		System.out.println("solo j git flow");
+		System.out.println("solo j gitasdasdasd flow");
 	}
 }
