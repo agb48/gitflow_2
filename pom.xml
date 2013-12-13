@@ -74,11 +74,13 @@
 					</flowInitContext>
 					<allowSnapshots>false</allowSnapshots>
 					<allowUntracked>false</allowUntracked>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<pushFeatures>true</pushFeatures>
+					<allowUntracked>false</allowUntracked>
+					<autoVersionSubmodules>false</autoVersionSubmodules>
 					<pushReleases>true</pushReleases>
-<!-- 					   <enableFeatureVersions>true</enableFeatureVersions> -->
-<!--         <enableSshAgent>true</enableSshAgent> -->
-<!--         <localOnly>true</localOnly> -->
+					<releaseBranchVersionSuffix>${project.name}-</releaseBranchVersionSuffix>
+					<scmCommentPrefix>${project.name}</scmCommentPrefix>
+					<noDeploy>false</noDeploy>
 				</configuration>
 			</plugin>
 		</plugins>
