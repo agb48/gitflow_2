@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.agb.gitflow</groupId>
 	<artifactId>root-pom</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 	<packaging>pom</packaging>
 
 
@@ -62,7 +62,14 @@
 				<artifactId>maven-jgitflow-plugin</artifactId>
 				<version>1.0-alpha21.1</version>
 				<configuration>
-					<!-- see goals wiki page for configuration options -->
+					<flowInitContext>
+						<masterBranchName>master</masterBranchName>
+						<developBranchName>development</developBranchName>
+						<featureBranchPrefix>feature-</featureBranchPrefix>
+						<releaseBranchPrefix>release-</releaseBranchPrefix>
+						<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+						<versionTagPrefix>SSMS-</versionTagPrefix>
+					</flowInitContext>
 				</configuration>
 			</plugin>
 		</plugins>
