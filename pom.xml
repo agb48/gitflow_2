@@ -60,29 +60,29 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>com.atlassian.maven.plugins</groupId>
-				<artifactId>maven-jgitflow-plugin</artifactId>
-				<version>1.0-alpha26</version>
-				<configuration>
-					<flowInitContext>
-						<masterBranchName>master</masterBranchName>
-						<developBranchName>development</developBranchName>
-						<featureBranchPrefix>feature-</featureBranchPrefix>
-						<releaseBranchPrefix>release-</releaseBranchPrefix>
-						<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
-						<versionTagPrefix>SSMS-</versionTagPrefix>
-					</flowInitContext>
-					<allowSnapshots>false</allowSnapshots>
-					<allowUntracked>false</allowUntracked>
-					<pushFeatures>true</pushFeatures>
-					<allowUntracked>false</allowUntracked>
-					<autoVersionSubmodules>false</autoVersionSubmodules>
-					<pushReleases>true</pushReleases>
-					<releaseBranchVersionSuffix>${project.name}-</releaseBranchVersionSuffix>
-					<scmCommentPrefix>${project.name}</scmCommentPrefix>
-					<noDeploy>false</noDeploy>
-				</configuration>
-			</plugin>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-pluginn</artifactId>
+                <version>1.0-m1.1</version>
+                <configuration>
+                    <flowInitContext>
+                        <masterBranchName>master</masterBranchName>
+                        <developBranchName>develop</developBranchName>
+                        <featureBranchPrefix>feature-</featureBranchPrefix>
+                        <releaseBranchPrefix>release-</releaseBranchPrefix>
+                        <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+                    </flowInitContext>
+                    <allowSnapshots>false</allowSnapshots>
+                    <allowUntracked>false</allowUntracked>
+                    <pushFeatures>true</pushFeatures>
+                    <allowUntracked>false</allowUntracked>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <releaseBranchVersionSuffix>RC</releaseBranchVersionSuffix>
+                    <buildNumberVersionSuffix />
+                    <pushReleases>true</pushReleases>
+                    <noDeploy>false</noDeploy>
+                    <enableSshAgent>true</enableSshAgent>
+                </configuration>
+            </plugin>
 		</plugins>
 
 	</build>
